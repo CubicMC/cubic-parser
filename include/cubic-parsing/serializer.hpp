@@ -7,11 +7,11 @@
 #include <unordered_map>
 #include <vector>
 
-#include <cubic-parser/options.h>
+#include <cubic-parsing/options.h>
 
-namespace cubic::parser {
+namespace cubic::parsing {
 
-class Serializer {
+class CUBIC_PARSING_API Serializer {
 public:
     virtual ~Serializer() = default;
 
@@ -137,4 +137,4 @@ template void Serializer::write_raw<int64_t>(const int64_t &value);
 template void Serializer::write_raw<float>(const float &value);
 template void Serializer::write_raw<double>(const double &value);
 
-} // namespace cubic::parser
+} // namespace cubic::parsing

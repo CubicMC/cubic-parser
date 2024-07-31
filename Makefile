@@ -46,7 +46,8 @@ endif
 
 SHARED := 0
 
-CXXFLAGS := -Wall
+CXXFLAGS := -DCUBIC_PARSING_BUILD
+CXXFLAGS += -Wall
 CXXFLAGS += -Wextra
 CXXFLAGS += -Wconversion
 CXXFLAGS += -std=c++17

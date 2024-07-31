@@ -1,8 +1,9 @@
-#include <cubic-parser/options.h>
-#include <cubic-parser/serializer.hpp>
 #include <string_view>
 
-namespace cubic::parser {
+#include <cubic-parsing/options.h>
+#include <cubic-parsing/serializer.hpp>
+
+namespace cubic::parsing {
 
 void Serializer::write_string(const std::string_view &string)
 {
@@ -10,4 +11,4 @@ void Serializer::write_string(const std::string_view &string)
     write_data(reinterpret_cast<const uint8_t *>(string.data()), string.size());
 }
 
-} // namespace cubic::parser
+} // namespace cubic::parsing

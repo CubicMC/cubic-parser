@@ -7,11 +7,11 @@
 #include <unordered_map>
 #include <vector>
 
-#include <cubic-parser/options.h>
+#include <cubic-parsing/options.h>
 
-namespace cubic::parser {
+namespace cubic::parsing {
 
-class Parser {
+class CUBIC_PARSING_API Parser {
 public:
     virtual ~Parser() = default;
 
@@ -147,4 +147,4 @@ template void Parser::read_raw<int64_t>(int64_t &value);
 template void Parser::read_raw<float>(float &value);
 template void Parser::read_raw<double>(double &value);
 
-} // namespace cubic::parser
+} // namespace cubic::parsing

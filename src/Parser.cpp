@@ -1,9 +1,9 @@
 #include <cstdint>
 
-#include <cubic-parser/options.h>
-#include <cubic-parser/parser.hpp>
+#include <cubic-parsing/options.h>
+#include <cubic-parsing/parser.hpp>
 
-namespace cubic::parser {
+namespace cubic::parsing {
 
 void Parser::read_string(std::string &string)
 {
@@ -13,4 +13,4 @@ void Parser::read_string(std::string &string)
     this->read_data(reinterpret_cast<uint8_t *>(string.data()), size);
 }
 
-} // namespace cubic::parser
+} // namespace cubic::parsing
